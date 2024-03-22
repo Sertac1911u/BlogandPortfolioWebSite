@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raven</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/raven.png" />
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link to fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="h-logo">
+        <img src="imgs/raven.png" alt="" class="logo-img" />
+        <a href="index.html" class="logo">RAVEN</a>
+      </div>
+      <ul id="menu" class="navbar">
+        <li><a href="index.html" style="--navanim: 1">Home</a></li>
+        <li>
+          <a href="articles.html" class="active" style="--navanim: 2"
+            >Articles</a
+          >
+        </li>
+        <li><a href="portfolios.html" style="--navanim: 3">Portfolio</a></li>
+        <li><a href="about.html" style="--navanim: 4">About</a></li>
+        <li><a href="contact.html" style="--navanim: 5">Contact</a></li>
+      </ul>
+      <span onclick="openNav()">
+        <i class="fa-solid fa-bars" id="overlay"></i>
+      </span>
+
+      <!-- Responsive Overlay Content -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="portfolios.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="containers">
+      <div class="main">
+        <div class="about-container">
+          <section class="bg-white dark:bg-gray-900 sm:mx-5 my-5">
+            <div class="mx-auto max-w-screen-xl">
+              <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <h1
+                  class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6"
+                >
+                  "Bilgisayar, Yazılım, Donanım" Gibi Yaklaşık 2500 Kelimeyi
+                  Dilimize Kazandıran Bilim İnsanıyla Tanışın: Prof. Dr. Aydın
+                  Köksal
+                </h1>
+
+                <p class="mb-6 text-gray-500 sm:text-xl md:mb-8">
+                  O dönemde insanlar bilgisayar mühendisliğinin bir meslek dalı
+                  dahi olmadığını iddia ederlerken Prof. Dr. Aydın Köksal
+                  çizdiği yolda emin adımlarla yürüyerek herkesin fikrini
+                  değiştirmiştir.
+                  <a
+                    href="#"
+                    class="text-indigo-500 underline transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+                    >random</a
+                  >
+                  or otherwise generated. It may be used to display a sample of
+                  fonts or generate text for testing. Filler text is dummy text
+                  which has no meaning however looks very similar to real text.
+                </p>
+
+                <h2
+                  class="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4"
+                >
+                  Prof. Dr. Aydın Köksal kimdir?
+                </h2>
+
+                <p class="mb-6 text-gray-500 sm:text-lg md:mb-8">
+                  Prof. Dr. Aydın Köksal 1940 yılında İstanbul’da doğmuştur.
+                  Galatasaray Lisesi’ni birincilikle bitirdikten sonra Fransa’da
+                  INSA de Lyon’dan Elektronik Yüksek Mühendisi diploması
+                  almıştır. Hacettepe Üniversitesinin kuruluş çalışmalarında da
+                  bulunan Aydın Köksal, Hacettepe Üniversitesi Bilgi İşlem
+                  Merkezi’ni kurup yönetmiştir. Ayrıca Bilişim dergisini
+                  yayınlayarak 1996 yılına kadar da yayın kurulu üyeliğini
+                  sürdürmüştür.
+                </p>
+
+                <ul
+                  class="mb-6 list-inside list-disc text-gray-500 sm:text-lg md:mb-8"
+                >
+                  <li>This is a section of some simple filler text</li>
+                  <li>Also known as placeholder text</li>
+                  <li>It shares some characteristics of a real written text</li>
+                </ul>
+
+                <blockquote
+                  class="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6"
+                >
+                  “Bu, yaşamımda aldığım en anlamlı ödül. Ömür Boyu Hizmet Ödülü
+                  deyince; bu, bana bundan sonrası için de büyük sorumluluk
+                  yüklüyor. Eğer Türkiye’nin bilgi toplumu olma yolunda büyük
+                  adımlar attığını görebilirsem gözüm arkada kalmayacak.”
+                </blockquote>
+
+                <div
+                  class="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8"
+                >
+                  <img
+                    src="https://www.webtekno.com/images/editor/default/0004/03/f9f3dff902660ffc2af0a9286e893e8408f0bb88.jpeg"
+                    loading="lazy"
+                    alt="Photo by Minh Pham"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+
+                <h2
+                  class="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4"
+                >
+                  Çalışanın hakkını veren sistem, başarı ve istikrar getirir.
+                </h2>
+
+                <p class="text-gray-500 sm:text-lg">
+                  Bu kadar önemli projeler ve çalışmalar yapan Prof. Dr. Aydın
+                  Köksal, yanına aldığı yetenekli ve gece gündüz çalıştıklarını
+                  belirttiği uzmanlara o zamanın ortalama mühendis maaşı 800 TL
+                  iken 2800 TL maaş verdiğini ve bu sayede bu kadar yetenekli
+                  insanlarla uzun süre beraber çalışabildiğini söylemektedir
+                </p>
+              </div>
+            </div>
+            <div class="comment-section">
+              <h1 class="header-aritcle rounded">Comments</h1>
+              <div class="comments">
+                <div class="comment-box">
+                  <div class="comment-info">
+                    <img src="https://i.hizliresim.com/blujv5z.png" />
+                    <h4>Kahraman Yılmaz</h4>
+                  </div>
+                  <div class="comment">
+                    <p>Anlamadım , başka yazı yok mu.</p>
+                  </div>
+                </div>
+                <div class="comment-box">
+                  <div class="comment-info">
+                    <img src="https://i.hizliresim.com/blujv5z.png" />
+                    <h4>Buket Koç</h4>
+                  </div>
+                  <div class="comment">
+                    <p>Çok iyi anlatım</p>
+                  </div>
+                </div>
+              </div>
+              <div class="comment-form">
+                <h2 class="">Leave a comment</h2>
+                <form action="#">
+                  <div class="form-row">
+                    <div class="input-data">
+                      <input type="text" required />
+                      <div class="underline"></div>
+                      <label for="">First Name</label>
+                    </div>
+                    <div class="input-data">
+                      <input type="text" required />
+                      <div class="underline"></div>
+                      <label for="">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="input-data">
+                      <input type="text" required />
+                      <div class="underline"></div>
+                      <label for="">Email Address</label>
+                      <br />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="input-data textarea">
+                      <textarea rows="8" cols="80" required></textarea>
+                      <br />
+                      <div class="underline"></div>
+                      <label for="">Write your message</label>
+                      <br />
+                    </div>
+                  </div>
+                  <div class="form-row submit-btn">
+                    <div class="input-data">
+                      <div class="inner"></div>
+                      <input type="submit" value="send" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="side">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <div class="last-article-container">
+          <h5>Last Articles</h5>
+          <ul>
+            <li>
+              <a href="" draggable="false">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+                ipsum dolor.</a
+              >
+            </li>
+            <li>
+              <a href="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Raven @ 2024</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //Responsive Navbar Function
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

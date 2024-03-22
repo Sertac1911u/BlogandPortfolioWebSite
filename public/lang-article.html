@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raven</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/raven.png" />
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link to fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="h-logo">
+        <img src="imgs/raven.png" alt="" class="logo-img" />
+        <a href="index.html" class="logo">RAVEN</a>
+      </div>
+      <ul id="menu" class="navbar">
+        <li><a href="index.html" style="--navanim: 1">Home</a></li>
+        <li>
+          <a href="articles.html" class="active" style="--navanim: 2"
+            >Articles</a
+          >
+        </li>
+        <li><a href="portfolios.html" style="--navanim: 3">Portfolio</a></li>
+        <li><a href="about.html" style="--navanim: 4">About</a></li>
+        <li><a href="contact.html" style="--navanim: 5">Contact</a></li>
+      </ul>
+      <span onclick="openNav()">
+        <i class="fa-solid fa-bars" id="overlay"></i>
+      </span>
+
+      <!-- Responsive Overlay Content -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="portfolios.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="containers">
+      <div class="main">
+        <div class="about-container">
+          <section class="bg-white dark:bg-gray-900 sm:mx-5 my-5">
+            <div class="mx-auto max-w-screen-xl">
+              <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <h1
+                  class="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6"
+                >
+                  Object Oriented Programming
+                </h1>
+
+                <p class="mb-6 text-gray-500 sm:text-lg md:mb-8">
+                  Object-oriented programming (OOP) is a programming paradigm
+                  based on the concept of objects,[1] which can contain data and
+                  code: data in the form of fields (often known as attributes or
+                  properties), and code in the form of procedures (often known
+                  as methods). In OOP, computer programs are designed by making
+                  them out of objects that interact with one another.[2][3] Many
+                  of the most widely used programming languages (such as C++,
+                  Java,[4] Python, etc.) are multi-paradigm and they support
+                  object-oriented programming to a greater or lesser degree,
+                  typically in combination with imperative programming,
+                  procedural programming and functional programming.Significant
+                  object-oriented languages include Ada, ActionScript, C++,
+                  Common Lisp, C#, Dart, Eiffel, Fortran 2003, Haxe, Java,[4]
+                  JavaScript, Kotlin, Logo, MATLAB, Objective-C, Object Pascal,
+                  Perl, PHP, Python, R, Raku, Ruby, Scala, SIMSCRIPT, Simula,
+                  Smalltalk, Swift, Vala and Visual Basic.NET
+                </p>
+
+                <h2
+                  class="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4"
+                >
+                  Python
+                </h2>
+
+                <p class="mb-6 text-gray-500 sm:text-lg md:mb-8">
+                  This is a section of some simple filler text, also known as
+                  placeholder text. It shares some characteristics of a real
+                  written text but is random or otherwise generated. It may be
+                  used to display a sample of fonts or generate text for
+                  testing. Filler text is dummy text which has no meaning
+                  however looks very similar to real text.
+                </p>
+
+                <ul class="mb-6 list-disc text-gray-500 sm:text-lg md:mb-8">
+                  <li>
+                    <a
+                      href="article.html"
+                      class="text-rose-900 hover:text-rose-600"
+                      >OOP Python</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="article.html"
+                      class="text-rose-900 hover:text-rose-600"
+                      >Example Python Game Projects</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="article.html"
+                      class="text-rose-900 hover:text-rose-600"
+                      >Pycharm</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- Code Block -->
+                <code
+                  class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6"
+                >
+                  <span class="flex gap-4">
+                    <span class="shrink-0 text-gray-500"> $ </span>
+
+                    <span class="flex-1 code">
+                      <span> print("Hello, World!") </span>
+                      <br />
+                      <span> print("Hello, World!") </span>
+                      <br />
+                      <span> print("Hello, World!") </span>
+                      <br />
+                      <span> print("Hello, World!") </span>
+
+                      <span class="text-rose-800"> #This is a comment. </span>
+                    </span>
+                  </span>
+
+                  <button onclick="copyCode()" class="copy-code">
+                    <svg
+                      class="shrink-0 h-5 w-5 transition text-gray-500 group-hover:text-white"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+                      <path
+                        d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z"
+                      ></path>
+                    </svg>
+                  </button>
+                </code>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="side">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <div class="last-article-container">
+          <h5>Last Articles</h5>
+          <ul>
+            <li>
+              <a href="" draggable="false">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+                ipsum dolor.</a
+              >
+            </li>
+            <li>
+              <a href="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Raven @ 2024</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //Copy Code
+      function copyCode() {
+        // Hedef span elementini seç
+        var codeSpan = document.querySelector(".code");
+
+        // Span elementinin içindeki metni al
+        var codeText = codeSpan.innerText;
+
+        // Yeni bir textarea elementi oluştur ve içine metni yerleştir
+        var textarea = document.createElement("textarea");
+        textarea.value = codeText;
+
+        // Textarea'yı sayfaya ekleyin
+        document.body.appendChild(textarea);
+
+        // Textarea'nın içeriğini seçin
+        textarea.select();
+
+        // Kopyalama işlemini gerçekleştirin
+        document.execCommand("copy");
+
+        // Textarea'yı kaldırın (görünmez hale getirin)
+        document.body.removeChild(textarea);
+
+        // Kullanıcıya kopyalandı uyarısı verin
+        alert("Code copied to clipboard!");
+      }
+
+      //Responsive Navbar Function
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

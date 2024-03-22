@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raven</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/raven.png" />
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link to fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="h-logo">
+        <img src="imgs/raven.png" alt="" class="logo-img" />
+        <a href="index.html" class="logo">RAVEN</a>
+      </div>
+      <ul id="menu" class="navbar">
+        <li>
+          <a href="index.html" class="nav-element active" style="--navanim: 1"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="articles.html" class="nav-element" style="--navanim: 2"
+            >Articles</a
+          >
+        </li>
+        <li>
+          <a href="portfolios.html" class="nav-element" style="--navanim: 3"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="about.html" class="nav-element" style="--navanim: 4"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="contact.html" class="nav-element" style="--navanim: 5"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <span onclick="openNav()">
+        <i class="fa-solid fa-bars" id="overlay"></i>
+      </span>
+
+      <!-- Responsive Overlay Content -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="portfolios.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="containers">
+      <div class="main">
+        <!-- Slider -->
+
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+          style="margin-bottom: 2rem"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="imgs/1.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+              <a href="" class="overlay-text">deneme1</a>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="imgs/2.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+              <a href="" class="overlay-text">deneme2</a>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="imgs/3.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="imgs/4.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="imgs/5.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <!-- End Slider -->
+
+        <div class="maincards">
+          <div class="sub-card">
+            <div class="card-header">Web Development</div>
+            <div class="card-mid">
+              <div class="card-element">
+                <div><img src="imgs/raven.png" class="card-img" alt="" /></div>
+                <a href="lang-article.html">Html5</a>
+              </div>
+              <div class="card-element">
+                <div><img src="imgs/raven.png" class="card-img" alt="" /></div>
+                <a href="lang-article.html">Html5</a>
+              </div>
+              <div class="card-element">
+                <div><img src="imgs/raven.png" class="card-img" alt="" /></div>
+                <a href="lang-article.html">Html5</a>
+              </div>
+              <div class="card-element">
+                <div><img src="imgs/raven.png" class="card-img" alt="" /></div>
+                <a href="lang-article.html">Html5</a>
+              </div>
+              <div class="card-element">
+                <div><img src="imgs/raven.png" class="card-img" alt="" /></div>
+                <a href="lang-article.html">Html5</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+        <div class="last-article-container">
+          <h5>Last Articles</h5>
+          <ul>
+            <li>
+              <a href="" draggable="false">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+                ipsum dolor.</a
+              >
+            </li>
+            <li>
+              <a href="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Raven @ 2024</p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        var pageTitle = document.title;
+        var pages = document.querySelectorAll(".nav-element");
+
+        pages.forEach(function (page) {
+          // Eğer sayfanın başlığı ile elementin içeriği eşleşiyorsa
+          if (page.textContent.trim() === pageTitle.trim()) {
+            // Active class'ını ekle
+            page.classList.add("active");
+          }
+        });
+      });
+
+      //Responsive Navbar Function
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      //Slider
+      let slideItems = document.querySelectorAll(".slide-item");
+
+      // Code for next button
+      document.querySelector(".next").addEventListener("click", slideNext);
+      function slideNext() {
+        slideItems[counter].style.animation = "next1 0.5s ease-in forwards";
+        if (counter >= slideItems.length - 1) {
+          counter = 0;
+        } else {
+          counter++;
+        }
+        slideItems[counter].style.animation = "next2 0.5s ease-in forwards";
+        indicators();
+      }
+
+      // Code for prev button
+      document.querySelector(".prev").addEventListener("click", slidePrev);
+      function slidePrev() {
+        slideItems[counter].style.animation = "prev1 0.5s ease-in forwards";
+        if (counter == 0) {
+          counter = slideItems.length - 1;
+        } else {
+          counter--;
+        }
+        slideItems[counter].style.animation = "prev2 0.5s ease-in forwards";
+        indicators();
+      }
+
+      // Auto sliding
+      function autoSliding() {
+        setInterval(slideNext, 3000);
+      }
+      autoSliding();
+
+      // Add and remove active class from the indicators
+      function indicators() {
+        let dots = document.querySelectorAll(".dot");
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].classList.remove("active");
+        }
+        dots[counter].classList.add("active");
+      }
+
+      // Add click event to the indicator
+      function switchImage(currentImage) {
+        let imageId = currentImage.getAttribute("attr");
+        counter = parseInt(imageId);
+        slideItems.forEach((item) => {
+          item.classList.remove("active");
+        });
+        slideItems[counter].classList.add("active");
+        indicators();
+      }
+    </script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

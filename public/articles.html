@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raven</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/raven.png" />
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Link to fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="h-logo">
+        <img src="imgs/raven.png" alt="" class="logo-img" />
+        <a href="index.html" class="logo">RAVEN</a>
+      </div>
+      <ul id="menu" class="navbar">
+        <li><a href="index.html" style="--navanim: 1">Home</a></li>
+        <li>
+          <a href="articles.html" class="active" style="--navanim: 2"
+            >Articles</a
+          >
+        </li>
+        <li><a href="portfolios.html" style="--navanim: 3">Portfolio</a></li>
+        <li><a href="about.html" style="--navanim: 4">About</a></li>
+        <li><a href="contact.html" style="--navanim: 5">Contact</a></li>
+      </ul>
+      <span onclick="openNav()">
+        <i class="fa-solid fa-bars" id="overlay"></i>
+      </span>
+
+      <!-- Responsive Overlay Content -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay Content -->
+        <div class="overlay-content">
+          <a href="index.html">Home</a>
+          <a href="articles.html">Articles</a>
+          <a href="portfolios.html">Portfolio</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <div class="containers">
+      <div class="main">
+        <div class="about-container">
+          <section class="bg-white dark:bg-gray-900 sm:mx-5 my-5">
+            <div class="mx-auto max-w-screen-xl">
+              <div class="mx-auto max-w-screen-lg text-center lg:mb-8 mb-4">
+                <h2
+                  class="rounded mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white header-aritcle"
+                >
+                  Articles
+                </h2>
+              </div>
+              <div class="grid gap-8 lg:grid-cols-2" id="items">
+                <article
+                  class="item p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                >
+                  <div
+                    class="flex justify-between items-center mb-5 text-gray-500"
+                  >
+                    <span
+                      class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
+                    >
+                      <svg
+                        class="mr-1 w-3 h-3"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
+                        ></path>
+                      </svg>
+                      Software
+                    </span>
+                    <span class="text-sm">1 days ago</span>
+                  </div>
+                  <img
+                    class="object-cover object-center w-full h-64 rounded-lg lg:h-80 mb-5"
+                    src="https://www.webtekno.com/images/editor/default/0004/03/f9f3dff902660ffc2af0a9286e893e8408f0bb88.jpeg"
+                    alt=""
+                  />
+
+                  <h2
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  >
+                    <a href="article.html"
+                      >"Bilgisayar, Yazılım, Donanım" Gibi Yaklaşık 2500
+                      Kelimeyi Dilimize Kazandıran...</a
+                    >
+                  </h2>
+                  <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+                    Prof. Dr. Aydın Köksal, ömrünü bilişime ve bilim dilinin
+                    Türkçeleşmesine adamıştır. Sayesinde ülkemizde önemli
+                    gelişmeler olmuş ve bilişim terimleri Türkçe bir şekilde
+                    yaygınlaşmıştır. Hacettepe’deki önemli görevlerinde işini en
+                    başından beri Türkçe konuşarak yaptığını söyleyen Prof. Dr.
+                    Aydın Köksal, terimlerin Türkçeleştirilmesine oldukça önem
+                    vermiştır.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <a
+                      href="article.html"
+                      class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                    >
+                      Read more
+                      <svg
+                        class="ml-2 w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="side">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+
+        <form class="max-w-md mx-auto p-3">
+          <label
+            for="default-search"
+            class="search-btn mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+            >Search</label
+          >
+          <div class="relative">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="search"
+              id="default-search"
+              class="search block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-rose-900 focus:border-rose-900 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-rose-500 dark:focus:border-rose-500"
+              placeholder="Search..."
+              required
+            />
+          </div>
+        </form>
+
+        <div class="last-article-container">
+          <h5>Last Articles</h5>
+          <ul>
+            <li>
+              <a href="" draggable="false">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+                ipsum dolor.</a
+              >
+            </li>
+            <li>
+              <a href="">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit.
+              </a>
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+            <li>
+              <a href=""
+                >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Repudiandae, eaque</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p>Raven @ 2024</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //Responsive Navbar Function
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
